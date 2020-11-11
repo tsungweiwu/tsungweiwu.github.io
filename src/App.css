@@ -1,5 +1,9 @@
 .App {
-  text-align: center;
+  background-color: #2e2f32;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  min-width: 100vh;
 }
 
 .App-logo {
@@ -16,11 +20,7 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-width: 100vh;
   color: white;
 }
 
@@ -36,3 +36,119 @@
     transform: rotate(360deg);
   }
 }
+
+h1 {
+  color: #bfbbbb;
+}
+
+h2 {
+  color: #bfbbbb;
+}
+
+h3 {
+  color: #bfbbbb;
+  font-size: 3.5vh;
+  margin-top: 4vh;
+}
+
+h4 {
+  color: #bfbbbb;
+  font-size: 2.5vh;
+  margin-top: 2vh;
+}
+
+p {
+  color: #bfbbbb;
+  font-size: 2vh;
+  margin-top: 0.5em;
+}
+
+.body {
+  margin-left: 10vh;
+  margin-top: 2vh;
+}
+
+.header {
+  margin-top: 2%;
+}
+
+.footer {
+  margin-top: 1rem;
+  padding: 1rem;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.personalImage {
+  height: 16em;
+  width: auto;
+}
+
+.socialIcons {
+  margin-top: 4%;
+  margin-left: 0.8vh;
+  margin-right: 0.8vh;
+  color: #F96815;
+}
+
+.socialIcons:hover {
+  color: #61dafb;
+}
+
+.pdf {
+  border: 0;
+  width:100%;
+  height:95%;
+  border:none;
+  overflow:hidden;
+}
+
+.btnCode {
+  border-color: #F96815;
+  color: #F96815;
+  margin-right: 1.5vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.btn-outline-primary:hover {
+  background-color: #F96815;
+  border-color: #F96815;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle {
+  background-color: #F96815;
+  border-color: #F96815;
+}
+
+.cardTitle {
+  color: #bfbbbb;
+  font-size: 2.5vh;
+  height: auto;
+}
+
+.cardText {
+  color: #bfbbbb;
+  font-size: 1.6vh;
+}
+
+.icon {
+  float: right;
+}
+
+.icon:hover {
+  color: #61dafb;
+}
+
+.tag{
+  background-color: #F96815;
+  color: black;
+  display:inline-block;
+  padding-left: 0.5vh;
+  padding-right: 0.5vh;
+  text-align:center;
+  margin-right: 0.8vh;
+}
+

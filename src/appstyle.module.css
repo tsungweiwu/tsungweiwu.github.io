@@ -1,0 +1,8 @@
+.headerStart {
+    display: inline;
+}
+
+.headerEnd {
+    display: inline;
+    float: right;
+}
