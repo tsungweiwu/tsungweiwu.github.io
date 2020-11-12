@@ -113,59 +113,48 @@ export default class App extends Component {
                                 />
                                 <Switch>
                                     <Route path="/home">
-                                        <Home />
+                                        <Transition
+                                            native
+                                            from={{opacity: 0}}
+                                            enter={{opacity: 1}}
+                                            leave={{opacity: 0}}
+                                            delay={100}
+                                            config={{duration: 1000}}
+                                            items={this.state.showHome}>
+                                            {(show) =>
+                                                show &&
+                                                ((props) => (
+                                                    <animated.div style={props}>
+                                                        <Home />
+                                                    </animated.div>
+                                                ))
+                                            }
+                                        </Transition>
                                     </Route>
                                     <Route path="/projects">
-                                        <Projects />
+                                        <Transition
+                                            native
+                                            from={{opacity: 0}}
+                                            enter={{opacity: 1}}
+                                            leave={{opacity: 0}}
+                                            delay={100}
+                                            config={{duration: 1000}}
+                                            items={this.state.showProject}>
+                                            {(show) =>
+                                                show &&
+                                                ((props) => (
+                                                    <animated.div style={props}>
+                                                        <Projects />
+                                                    </animated.div>
+                                                ))
+                                            }
+                                        </Transition>
                                     </Route>
                                     <Route path="/resume">
                                         <Resume />
                                     </Route>
                                 </Switch>
                             </Router>
-                            {/*<Tab.Pane eventKey="home">*/}
-                            {/*    <Transition*/}
-                            {/*        native*/}
-                            {/*        from={{opacity: 0}}*/}
-                            {/*        enter={{opacity: 1}}*/}
-                            {/*        leave={{opacity: 0}}*/}
-                            {/*        delay={100}*/}
-                            {/*        config={{duration: 1000}}*/}
-                            {/*        items={this.state.showHome}>*/}
-                            {/*        {(show) =>*/}
-                            {/*            show &&*/}
-                            {/*            ((props) => (*/}
-                            {/*                <animated.div style={props}>*/}
-                            {/*                    <Home />*/}
-                            {/*                </animated.div>*/}
-                            {/*            ))*/}
-                            {/*        }*/}
-                            {/*    </Transition>*/}
-                            {/*</Tab.Pane>*/}
-
-                            {/*<Tab.Pane eventKey="projects">*/}
-                            {/*    <Transition*/}
-                            {/*        native*/}
-                            {/*        from={{opacity: 0}}*/}
-                            {/*        enter={{opacity: 1}}*/}
-                            {/*        leave={{opacity: 0}}*/}
-                            {/*        delay={100}*/}
-                            {/*        config={{duration: 1000}}*/}
-                            {/*        items={this.state.showProject}>*/}
-                            {/*        {(show) =>*/}
-                            {/*            show &&*/}
-                            {/*            ((props) => (*/}
-                            {/*                <animated.div style={props}>*/}
-                            {/*                    <Projects />*/}
-                            {/*                </animated.div>*/}
-                            {/*            ))*/}
-                            {/*        }*/}
-                            {/*    </Transition>*/}
-                            {/*</Tab.Pane>*/}
-
-                            {/*<Tab.Pane eventKey="resume">*/}
-                            {/*    <Resume />*/}
-                            {/*</Tab.Pane>*/}
                         </Tab.Content>
                     </Tab.Container>
                 </header>
