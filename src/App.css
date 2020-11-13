@@ -71,6 +71,14 @@ p {
     margin-right: 0.5em;
 }
 
+ol {
+    color: #bfbbbb;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
 .body {
     margin-left: 3vh;
     margin-right: 1vh;

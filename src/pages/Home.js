@@ -50,31 +50,29 @@ export default class Home extends Component {
                         workflows, but the learning never ends. If given a task,
                         I will strive towards completing with an open mind
                         towards:
-                        {
-                            <ol
-                                style={{
-                                    textAlign: 'left',
-                                    marginTop: '1.5em',
-                                }}>
-                                <li>
-                                    Learning new things and aspiring to be
-                                    better than I previously was.
-                                </li>
-                                <li>
-                                    Adapting and working alongside with new
-                                    people to understanding their workflow.
-                                </li>
-                                <li>
-                                    Maintaining progress, and meeting deadlines
-                                    and expectations.
-                                </li>
-                                <li>
-                                    Providing constructive feedback and
-                                    cooperation to the team.
-                                </li>
-                            </ol>
-                        }
                     </p>
+                    <ol
+                        style={{
+                            textAlign: 'left',
+                            marginTop: '1.5em',
+                        }}>
+                        <li>
+                            Learning new things and aspiring to be better than I
+                            previously was.
+                        </li>
+                        <li>
+                            Adapting and working alongside with new people to
+                            understanding their workflow.
+                        </li>
+                        <li>
+                            Maintaining progress, and meeting deadlines and
+                            expectations.
+                        </li>
+                        <li>
+                            Providing constructive feedback and cooperation to
+                            the team.
+                        </li>
+                    </ol>
 
                     <figure className="quote">
                         <h4>{this.state.quote.title}</h4>

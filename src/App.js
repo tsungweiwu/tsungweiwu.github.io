@@ -132,23 +132,7 @@ export default class App extends Component {
                                         </Transition>
                                     </Route>
                                     <Route path="/projects">
-                                        <Transition
-                                            native
-                                            from={{opacity: 0}}
-                                            enter={{opacity: 1}}
-                                            leave={{opacity: 0}}
-                                            delay={100}
-                                            config={{duration: 1000}}
-                                            items={this.state.showProject}>
-                                            {(show) =>
-                                                show &&
-                                                ((props) => (
-                                                    <animated.div style={props}>
-                                                        <Projects />
-                                                    </animated.div>
-                                                ))
-                                            }
-                                        </Transition>
+                                        <Projects />
                                     </Route>
                                     <Route path="/resume">
                                         <Resume />
