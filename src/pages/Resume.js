@@ -9,7 +9,7 @@ export default class Resume extends Component {
                     <iframe
                         title="resume"
                         className={'pdf'}
-                        src={`https://drive.google.com/file/d/16t4DgmKGcYTUrcsCQkoKBU1A-hT0NoKZ/preview`}></iframe>
+                        src={`https://drive.google.com/file/d/1CdVIgdEQVsvN0WUiDTSagsouDhS1JJ-c/preview`}></iframe>
                 </div>
             </Row>
         );

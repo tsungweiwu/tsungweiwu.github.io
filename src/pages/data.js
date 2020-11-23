@@ -5,6 +5,7 @@ import pong0 from '../assets/pong/pong0.png';
 import pong1 from '../assets/pong/pong1.png';
 import pong2 from '../assets/pong/pong2.png';
 import pong3 from '../assets/pong/pong3.png';
+import soon from '../assets/comingsoon.jpg';
 
 // eslint-disable-next-line
 export default [
@@ -44,5 +45,23 @@ export default [
         frame: '',
         link: 'https://github.com/tsungweiwu/Pong',
         languages: ['All', 'C'],
+    },
+    {
+        title: 'Instagram Replica',
+        description:
+            'Practice project to try and replicate the most recent version of Instagram in 2020. Reason for choosing Instagram is because of its C.R.U.D. (Create, Retrieve, Update, Delete) to database required funtionality.',
+        imageSrc: [soon],
+        frame: '',
+        link: '',
+        languages: ['All', 'Swift'],
+    },
+    {
+        title: 'Meet Food & Culture',
+        description:
+            'Senior Project, to build an app from React Native that allows users from all over the globe to connect through the one thing we can all relate with, food. Food is the gateway to relationships and exploration of new cultures.',
+        imageSrc: [soon],
+        frame: '',
+        link: '',
+        languages: ['All', 'React Native'],
     },
 ];

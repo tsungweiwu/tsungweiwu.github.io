@@ -18,6 +18,7 @@ export default class Projects extends Component {
             'C',
             'HTML',
             'CSS',
+            'Swift',
         ],
         filterName: 'All',
         showImage: false,
@@ -110,10 +111,14 @@ export default class Projects extends Component {
                                                 {filteredProjects.title}
                                                 <FiLink
                                                     className={'icon'}
-                                                    onClick={() =>
-                                                        this.projectLink(
-                                                            filteredProjects.link,
-                                                        )
+                                                    onClick={
+                                                        filteredProjects.link !==
+                                                        ''
+                                                            ? () =>
+                                                                  this.projectLink(
+                                                                      filteredProjects.link,
+                                                                  )
+                                                            : ''
                                                     }
                                                 />
                                             </Card.Title>

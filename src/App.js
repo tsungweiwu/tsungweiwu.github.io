@@ -143,28 +143,31 @@ export default class App extends Component {
                     </Tab.Container>
                 </header>
 
-                <footer className={'footer'}>
-                    <p
-                        style={{
-                            display: 'inline',
-                            float: 'left',
-                            fontSize: '1em',
-                        }}>
-                        Copyright &#169; 2020 Tsung Wei Wu
-                    </p>
-                    <div style={{display: 'inline', float: 'right'}}>
-                        <SiGithub
-                            size={'2em'}
-                            className={'socialIcons'}
-                            onClick={this.handleGit}
-                        />
-                        <SiLinkedin
-                            size={'2em'}
-                            className={'socialIcons'}
-                            onClick={this.handleLinkedIn}
-                        />
-                    </div>
-                </footer>
+                <Row md={2} className="justify-content-center">
+                    <footer className={'footer'}>
+                        <div style={{display: 'inline', float: 'left'}}>
+                            <p
+                                style={{
+                                    fontSize: '1em',
+                                }}>
+                                Copyright &#169; 2020 Tsung Wei Wu
+                            </p>
+                        </div>
+
+                        <div style={{display: 'inline', float: 'right'}}>
+                            <SiGithub
+                                size={'2em'}
+                                className={'socialIcons'}
+                                onClick={this.handleGit}
+                            />
+                            <SiLinkedin
+                                size={'2em'}
+                                className={'socialIcons'}
+                                onClick={this.handleLinkedIn}
+                            />
+                        </div>
+                    </footer>
+                </Row>
             </div>
         );
     }
