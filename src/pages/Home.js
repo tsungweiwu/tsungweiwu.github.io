@@ -1,20 +1,33 @@
 import React, {Component} from 'react';
+import axios from 'axios';
 import {Row, Image} from 'react-bootstrap';
 import image from '../assets/personal_image.JPG';
 
+const apiUrl = 'https://quotes.rest/qod.json?category=inspire';
 export default class Home extends Component {
     state = {
         quote: '',
     };
 
     componentDidMount() {
-        fetch('https://quotes.rest/qod.json?category=inspire')
-            .then((res) => res.json())
-            .then((data) => {
-                this.setState({
-                    quote: data.contents.quotes[0],
-                });
+        axios({method: 'get', url: `${apiUrl}`}).then((response) => {
+            this.setState({
+                quote: response.data.contents.quotes[0],
             });
+        });
+
+        // fetch('https://quotes.rest/qod.json?category=inspire', {
+        //     method: 'GET',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //     },
+        // })
+        //     .then((res) => res.json())
+        //     .then((data) => {
+        //         this.setState({
+        //             quote: data.contents.quotes[0],
+        //         });
+        //     });
     }
 
     render() {
