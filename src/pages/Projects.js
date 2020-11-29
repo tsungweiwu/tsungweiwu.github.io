@@ -19,6 +19,7 @@ export default class Projects extends Component {
             'HTML',
             'CSS',
             'Swift',
+            'Python',
         ],
         filterName: 'All',
         showImage: false,

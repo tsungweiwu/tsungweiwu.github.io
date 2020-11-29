@@ -6,6 +6,7 @@ import Typical from 'react-typical';
 import Home from './pages/Home.js';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
+import NotFound from './pages/NotFound';
 import {SiGithub, SiLinkedin} from 'react-icons/si';
 import {Transition, animated} from 'react-spring/renderprops';
 import {firebaseAnalytics} from './firebaseConfig';
@@ -106,13 +107,13 @@ export default class App extends Component {
 
                         <Tab.Content>
                             <Router>
-                                <Route
-                                    exact
-                                    path="/"
-                                    render={() => <Redirect to="/home" />}
-                                />
                                 <Switch>
-                                    <Route path="/home">
+                                    <Route
+                                        exact
+                                        path="/"
+                                        render={() => <Redirect to="/home" />}
+                                    />
+                                    <Route exact path="/home">
                                         <Transition
                                             native
                                             from={{opacity: 0}}
@@ -131,13 +132,20 @@ export default class App extends Component {
                                             }
                                         </Transition>
                                     </Route>
-                                    <Route path="/projects">
+                                    <Route exact path="/projects">
                                         <Projects />
                                     </Route>
-                                    <Route path="/resume">
+                                    <Route exact path="/resume">
                                         <Resume />
                                     </Route>
+
+                                    <Route path="/404">
+                                       <NotFound/>
+                                    </Route>
+                                    <Redirect to="/404" />
                                 </Switch>
+
+                                
                             </Router>
                         </Tab.Content>
                     </Tab.Container>

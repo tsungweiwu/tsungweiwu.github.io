@@ -5,6 +5,7 @@ import pong0 from '../assets/pong/pong0.png';
 import pong1 from '../assets/pong/pong1.png';
 import pong2 from '../assets/pong/pong2.png';
 import pong3 from '../assets/pong/pong3.png';
+import webscrape from '../assets/webscrape.png';
 import soon from '../assets/comingsoon.jpg';
 
 // eslint-disable-next-line
@@ -63,5 +64,14 @@ export default [
         frame: '',
         link: '',
         languages: ['All', 'React Native'],
+    },
+    {
+        title: 'Internship Web Scraper',
+        description:
+            'Practice program to collect specific information about intern positions available and export it to a csv file. This application also helped me understanding the html structures of Glassdoor in a deeper level.',
+        imageSrc: [webscrape],
+        frame: '',
+        link: 'https://github.com/tsungweiwu/InternshipFinder',
+        languages: ['All', 'Python'],
     },
 ];
