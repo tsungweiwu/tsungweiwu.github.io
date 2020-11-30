@@ -5,6 +5,14 @@ import pong0 from '../assets/pong/pong0.png';
 import pong1 from '../assets/pong/pong1.png';
 import pong2 from '../assets/pong/pong2.png';
 import pong3 from '../assets/pong/pong3.png';
+import meet1 from '../assets/meet/meet1.png';
+import meet2 from '../assets/meet/meet2.png';
+import meet3 from '../assets/meet/meet3.png';
+import meet4 from '../assets/meet/meet4.png';
+import ig1 from '../assets/instagram/ig1.png';
+import ig2 from '../assets/instagram/ig2.png';
+import ig3 from '../assets/instagram/ig3.png';
+import ig4 from '../assets/instagram/ig4.png';
 import webscrape from '../assets/webscrape.png';
 import soon from '../assets/comingsoon.jpg';
 
@@ -51,7 +59,7 @@ export default [
         title: 'Instagram Replica',
         description:
             'Practice project to try and replicate the most recent version of Instagram in 2020. Reason for choosing Instagram is because of its C.R.U.D. (Create, Retrieve, Update, Delete) to database required funtionality.',
-        imageSrc: [soon],
+        imageSrc: [ig1, ig2, ig3, ig4],
         frame: '',
         link: '',
         languages: ['All', 'Swift'],
@@ -60,7 +68,7 @@ export default [
         title: 'Meet Food & Culture',
         description:
             'Senior Project, to build an app from React Native that allows users from all over the globe to connect through the one thing we can all relate with, food. Food is the gateway to relationships and exploration of new cultures.',
-        imageSrc: [soon],
+        imageSrc: [meet1, meet2, meet3, meet4],
         frame: '',
         link: '',
         languages: ['All', 'React Native'],

@@ -131,7 +131,7 @@ export default class Projects extends Component {
                                                 // eslint-disable-next-line
                                                 <iframe
                                                     width="100%"
-                                                    height="235vh"
+                                                    height="342vh"
                                                     src={filteredProjects.frame}
                                                     frameBorder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -145,7 +145,7 @@ export default class Projects extends Component {
                                                                     src={img}
                                                                     variant="top"
                                                                     height={
-                                                                        '235vh'
+                                                                        '350vh'
                                                                     }
                                                                     width={
                                                                         '100%'
