@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import {Row, Image} from 'react-bootstrap';
-import image from '../assets/personal_image.JPG';
+import image from '../assets/personal_image.jpg';
 
 const apiUrl = 'https://quotes.rest/qod.json?category=inspire';
 export default class Home extends Component {
@@ -40,6 +40,7 @@ export default class Home extends Component {
                     <Image
                         src={image}
                         className="personalImage"
+                        style={{width: '16em'}}
                         roundedCircle></Image>
                     <h3>Allow me to introduce myself</h3>
                     <p>

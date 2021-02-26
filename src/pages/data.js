@@ -14,6 +14,10 @@ import ig2 from '../assets/instagram/ig2.png';
 import ig3 from '../assets/instagram/ig3.png';
 import ig4 from '../assets/instagram/ig4.png';
 import webscrape from '../assets/webscrape.png';
+import exped from '../assets/exped.png';
+import timer from '../assets/pokemon/timer.png';
+import poke from '../assets/pokemon/poke.png';
+import catches from '../assets/pokemon/catches.png';
 import soon from '../assets/comingsoon.jpg';
 
 // eslint-disable-next-line
@@ -35,6 +39,35 @@ export default [
         frame: 'https://www.youtube.com/embed/UNQeow4AL10',
         link: 'https://github.com/tsungweiwu/Utility-2',
         languages: ['All', 'TypeScript', 'JavaScript', 'HTML', 'CSS'],
+    },
+    {
+        title: 'Detective Pikachu Bot',
+        // eslint-disable-next-line
+        description:
+            'Discord bot that sends a reminder for the cool-down cast of catching Pokemon and transfers embedded messages over to a specific channel when a "Shiny" or "Legendary" is found. It also keeps track of the daily Pokemon caught and displays it every midnight before resetting the count.',
+        imageSrc: [timer, poke, catches],
+        frame: '',
+        link: 'https://github.com/tsungweiwu/DetectivePikachu',
+        languages: ['All', 'Node.js', 'JavaScript'],
+    },
+    {
+        title: 'Expedition Bot',
+        // eslint-disable-next-line
+        description:
+            'Discord bot that schedules a daily reminder for expeditions and retrieves the majority vote/reaction and sends another reminder at that time',
+        imageSrc: [exped],
+        frame: '',
+        link: 'https://github.com/tsungweiwu/ExpeditionBot',
+        languages: ['All', 'Node.js', 'JavaScript'],
+    },
+    {
+        title: 'Meet Food & Culture',
+        description:
+            'Senior Project, to build an app from React Native that allows users from all over the globe to connect through the one thing we can all relate with, food. Food is the gateway to relationships and exploration of new cultures.',
+        imageSrc: [meet1, meet2, meet3, meet4],
+        frame: '',
+        link: 'https://www.diemdao.com/meetfoodculture',
+        languages: ['All', 'React Native'],
     },
     {
         title: 'Grade Calculator',
@@ -63,15 +96,6 @@ export default [
         frame: '',
         link: '',
         languages: ['All', 'Swift'],
-    },
-    {
-        title: 'Meet Food & Culture',
-        description:
-            'Senior Project, to build an app from React Native that allows users from all over the globe to connect through the one thing we can all relate with, food. Food is the gateway to relationships and exploration of new cultures.',
-        imageSrc: [meet1, meet2, meet3, meet4],
-        frame: '',
-        link: '',
-        languages: ['All', 'React Native'],
     },
     {
         title: 'Internship Web Scraper',

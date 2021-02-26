@@ -8,6 +8,7 @@ export default class Projects extends Component {
         languages: [
             'All',
             'React.js',
+            'Node.js',
             'React Native',
             'JavaScript',
             'TypeScript',
