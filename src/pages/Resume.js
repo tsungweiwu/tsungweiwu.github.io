@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Row} from 'react-bootstrap';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
-import resume from '../assets/TsungWeiWu_Resume2022c.pdf'
+import resume from '../assets/TsungWeiWu_Resume09-2022.pdf'
 
 export default class Resume extends Component {
     state = {
