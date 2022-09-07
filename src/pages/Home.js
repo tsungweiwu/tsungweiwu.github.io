@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import {Row, Image} from 'react-bootstrap';
-import image from '../assets/personal_image.jpg';
+import image from '../assets/personal_image.JPG';
 
 const apiUrl = 'https://quotes.rest/qod.json?category=inspire';
 export default class Home extends Component {

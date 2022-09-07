@@ -9,7 +9,6 @@ import Resume from './pages/Resume';
 import NotFound from './pages/NotFound';
 import {SiGithub, SiLinkedin} from 'react-icons/si';
 import {Transition, animated} from 'react-spring/renderprops';
-import {firebaseAnalytics} from './firebaseConfig';
 import queryString from 'query-string';
 import {
     BrowserRouter as Router,
@@ -27,10 +26,6 @@ export default class App extends Component {
 
     componentDidMount() {
         document.body.style.backgroundColor = '#2e2f32';
-        let src = queryString.parse(window.location.search).s;
-        if (src === '1') {
-            firebaseAnalytics.logEvent('visited from email');
-        }
     }
 
     toggleHome = (e) => {
@@ -39,7 +34,6 @@ export default class App extends Component {
             showProject: false,
             showResume: false,
         });
-        firebaseAnalytics.logEvent('homepage_visited');
     };
 
     toggleProject = (e) => {
@@ -48,7 +42,6 @@ export default class App extends Component {
             showProject: true,
             showResume: false,
         });
-        firebaseAnalytics.logEvent('projects_visited');
     };
 
     toggleResume = (e) => {
@@ -57,16 +50,13 @@ export default class App extends Component {
             showProject: false,
             showResume: true,
         });
-        firebaseAnalytics.logEvent('resume_visited');
     };
 
     handleGit = () => {
-        firebaseAnalytics.logEvent('Github_opened');
         window.open('https://github.com/tsungweiwu');
     };
 
     handleLinkedIn = () => {
-        firebaseAnalytics.logEvent('LinkedIn_opened');
         window.open('https://www.linkedin.com/in/tsungweiwu/');
     };
 
