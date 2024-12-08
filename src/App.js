@@ -94,7 +94,7 @@ export default class App extends Component {
                         </Row>
 
                         <Tab.Content>
-                            <Router>
+                            <Router basename={process.env.PUBLIC_URL}>
                                 <Routes>
                                     <Route
                                         exact
