@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Tab, Row, Nav} from 'react-bootstrap';
+import {Tab, Row, Nav, NavItem, NavLink} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Typical from 'react-typical';
@@ -9,10 +9,10 @@ import Resume from './pages/Resume';
 import NotFound from './pages/NotFound';
 import {SiGithub, SiLinkedin} from 'react-icons/si';
 import {
-    BrowserRouter as Router,
-    Navigate,
+    HashRouter,
     Routes,
     Route,
+    Link,
 } from 'react-router-dom';
 
 export default class App extends Component {
@@ -63,50 +63,63 @@ export default class App extends Component {
             <div>
                 <header>
                     <Tab.Container defaultActiveKey="/home">
+                    <HashRouter>
                         <Row
                             md={2}
                             className="justify-content-center"
                             style={{backgroundColor: '#27272b'}}>
                             <Nav>
-                                <Nav.Item onClick={this.toggleHome}>
-                                    <Nav.Link href="/home">
-                                        <Typical
-                                            steps={['Tsung Wei Wu']}
-                                            wrapper="h4"
-                                        />
-                                    </Nav.Link>
-                                </Nav.Item>
+                                <NavItem>
+                                    <NavLink>
+                                        <Link 
+                                            style={{textDecoration: 'none'}} 
+                                            to="/home">
+                                                <Typical
+                                                    steps={['Tsung Wei Wu']}
+                                                    wrapper="h4"
+                                                />
+                                        </Link>
+                                    </NavLink>>
+                                </NavItem>
 
                                 <div className="ml-auto" />
 
-                                <Nav.Item onClick={this.toggleProject}>
-                                    <Nav.Link href="/projects">
-                                        <h4>Projects</h4>
-                                    </Nav.Link>
-                                </Nav.Item>
+                                <NavItem>
+                                    <NavLink>
+                                        <Link 
+                                            style={{textDecoration: 'none'}} 
+                                            to="/projects">
+                                            <h4>Projects</h4>
+                                        </Link>
+                                    </NavLink>
+                                </NavItem>
 
-                                <Nav.Item onClick={this.toggleResume}>
-                                    <Nav.Link href="/resume">
-                                        <h4>Resume</h4>
-                                    </Nav.Link>
-                                </Nav.Item>
+                                <NavItem>
+                                    <NavLink>
+                                        <Link 
+                                            style={{textDecoration: 'none'}} 
+                                            to="/resume">
+                                            <h4> Resume</h4>
+                                        </Link>
+                                    </NavLink>
+                                </NavItem>
                             </Nav>
                         </Row>
-
+                        
                         <Tab.Content>
-                            <Router basename={process.env.PUBLIC_URL}>
                                 <Routes>
                                     <Route
                                         exact
                                         path="/"
-                                        element = {<Navigate to="/home" />}
+                                        element = {<Home />}
                                     />
                                     <Route exact path="/home" element={<Home />} />
                                     <Route exact path="/projects" element={<Projects />} />
                                     <Route exact path="/resume" element={<Resume />} />
                                 </Routes>
-                            </Router>
+                            
                         </Tab.Content>
+                        </HashRouter>
                     </Tab.Container>
                 </header>
 
