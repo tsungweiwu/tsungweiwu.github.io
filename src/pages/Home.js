@@ -2,12 +2,7 @@ import React, {Component} from 'react';
 import {Row, Image} from 'react-bootstrap';
 import image from '../assets/personal_image.JPG';
 
-const apiUrl = 'https://quotes.rest/qod.json?category=inspire';
 export default class Home extends Component {
-    state = {
-        quote: '',
-    };
-
     render() {
         return (
             <Row

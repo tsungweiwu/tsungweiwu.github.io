@@ -105,8 +105,6 @@ export default class App extends Component {
                                     <Route exact path="/projects" element={<Projects />} />
                                     <Route exact path="/resume" element={<Resume />} />
                                 </Routes>
-
-                                
                             </Router>
                         </Tab.Content>
                     </Tab.Container>
