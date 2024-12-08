@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule (.*) https://www.tsungweiwu.com/home [R=301,L]
+
+  RewriteCond %{HTTP_HOST} ^tsungweiwu.com
+  RewriteRule (.*) https://www.tsungweiwu.com/home [R=301,L]
+
+  RewriteCond %{HTTP_HOST} ^http://www.tsungweiwu.com
+  RewriteRule (.*) https://www.tsungweiwu.com/home [R=301,L]
+
+  RewriteCond %{HTTP_HOST} ^http://tsungweiwu.com
+  RewriteRule (.*) https://www.tsungweiwu.com/home [R=301,L]
+
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+
+</IfModule>
