@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import axios from 'axios';
 import {Row, Image} from 'react-bootstrap';
 import image from '../assets/personal_image.JPG';
 
@@ -8,27 +7,6 @@ export default class Home extends Component {
     state = {
         quote: '',
     };
-
-    componentDidMount() {
-        axios({method: 'get', url: `${apiUrl}`}).then((response) => {
-            this.setState({
-                quote: response.data.contents.quotes[0],
-            });
-        });
-
-        // fetch('https://quotes.rest/qod.json?category=inspire', {
-        //     method: 'GET',
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //     },
-        // })
-        //     .then((res) => res.json())
-        //     .then((data) => {
-        //         this.setState({
-        //             quote: data.contents.quotes[0],
-        //         });
-        //     });
-    }
 
     render() {
         return (
@@ -45,57 +23,67 @@ export default class Home extends Component {
                     <h3>Allow me to introduce myself</h3>
                     <p>
                         My name is Tsung Wei, and I am a Software Engineer
-                        majoring in Computer Science at the University of South
+                        with a Bachelor of Science in Computer Science from the University of South
                         Carolina. I grew up in a small country called Belize,
-                        where I obtained my Associates Degree in Computer
-                        Science.
+                        where I first discovered my passion for programming.
                         {<br />}
-                        {<br />}I have used Java abundantly throughout the
-                        course of my studies, however I have discovered a
-                        passion for web development with my first start up. We
-                        were a group of friends looking for ways to earn some
-                        pocket money, so we came up with an approach to build
-                        simple websites for local stores around the towns in
-                        Belize.
+                        Now I am in Canada in pursuit of a new career,
+                        eager to contribute my skills and experience to a forward-thinking organization.
                         {<br />}
-                        {<br />}I have recently completed an internship
-                        revolving around FullStack Engineering at Wayfair. This
-                        experience has exposed me to a variety of languages and
-                        workflows, but the learning never ends. If given a task,
-                        I will strive towards completing with an open mind
-                        towards:
+                        {<br />}
                     </p>
-                    <ol
-                        style={{
-                            textAlign: 'left',
-                            marginTop: '1.5em',
-                        }}>
-                        <li>
-                            Learning new things and aspiring to be better than I
-                            previously was.
-                        </li>
-                        <li>
-                            Adapting and working alongside with new people to
-                            understanding their workflow.
-                        </li>
-                        <li>
-                            Maintaining progress, and meeting deadlines and
-                            expectations.
-                        </li>
-                        <li>
-                            Providing constructive feedback and cooperation to
-                            the team.
-                        </li>
-                    </ol>
 
-                    <figure className="quote">
-                        <h4>{this.state.quote.title}</h4>
-                        <blockquote>{this.state.quote.quote}</blockquote>
-                        <figcaption>
-                            &mdash; {this.state.quote.author},{' '}
-                            <cite>{this.state.quote.date}</cite>
-                        </figcaption>
-                    </figure>
+                    <br/><br/>
+                    <h4 style={{
+                        textAlign: 'left'
+                    }}>
+                        Work Experience
+                    </h4>
+
+                    <br/>
+
+                    <h5 style={{
+                        color: '#bfbbbb',
+                        textAlign: 'left'
+                    }}>
+                        Morgan Stanley
+                    </h5>
+                    <h6 style={{
+                        color: '#bfbbbb',
+                        textAlign: 'left'
+                    }}>
+                        Associate Software Engineer - Investment Operations (Dec 2021 – Dec 2024)
+                    </h6>
+
+                    <br/>
+                    
+                    <h5 style={{
+                        color: '#bfbbbb',
+                        textAlign: 'left'
+                    }}>
+                        Parametric Portfolio Associates
+                    </h5>
+                    <h6 style={{
+                        color: '#bfbbbb',
+                        textAlign: 'left'
+                    }}>
+                        Software Engineer Intern - Investment Operations (June 2021 – Dec 2021)
+                    </h6>
+
+                    <br/>
+                    
+                    <h5 style={{
+                        color: '#bfbbbb',
+                        textAlign: 'left'
+                    }}>
+                        Wayfair
+                    </h5>
+                    <h6 style={{
+                        color: '#bfbbbb',
+                        textAlign: 'left'
+                    }}>
+                        Software Engineer Intern - Promotions Experience (June 2019 – Aug 2019)
+                    </h6>
                 </div>
             </Row>
         );

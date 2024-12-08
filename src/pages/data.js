@@ -1,3 +1,4 @@
+import ctasia from '../assets/ctasia.png';
 import zoom from '../assets/zoom-react-laravel.png';
 import youtility from '../assets/youtility.png';
 import grade from '../assets/gradeCalc.png';
@@ -18,10 +19,18 @@ import exped from '../assets/exped.png';
 import timer from '../assets/pokemon/timer.png';
 import poke from '../assets/pokemon/poke.png';
 import catches from '../assets/pokemon/catches.png';
-import soon from '../assets/comingsoon.jpg';
 
 // eslint-disable-next-line
 export default [
+    {
+        title: 'CT Asia Culture',
+        description:
+            'Web page made with WordPress to simply share the information about east asian culture to the public audience.',
+        imageSrc: [ctasia],
+        frame: '',
+        link: 'https://www.ctasiaculture.com/en/',
+        languages: ['All', 'WordPress'],
+    },
     {
         title: 'Zoom Meeting Dashboard',
         description:

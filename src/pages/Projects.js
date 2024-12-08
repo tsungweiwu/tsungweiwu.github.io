@@ -21,6 +21,7 @@ export default class Projects extends Component {
             'CSS',
             'Swift',
             'Python',
+            'WordPress',
         ],
         filterName: 'All',
         showImage: false,

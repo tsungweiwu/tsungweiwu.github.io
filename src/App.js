@@ -8,12 +8,10 @@ import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import NotFound from './pages/NotFound';
 import {SiGithub, SiLinkedin} from 'react-icons/si';
-import {Transition, animated} from 'react-spring/renderprops';
-import queryString from 'query-string';
 import {
     BrowserRouter as Router,
-    Redirect,
-    Switch,
+    Navigate,
+    Routes,
     Route,
 } from 'react-router-dom';
 
@@ -97,43 +95,16 @@ export default class App extends Component {
 
                         <Tab.Content>
                             <Router>
-                                <Switch>
+                                <Routes>
                                     <Route
                                         exact
                                         path="/"
-                                        render={() => <Redirect to="/home" />}
+                                        element = {<Navigate to="/home" />}
                                     />
-                                    <Route exact path="/home">
-                                        <Transition
-                                            native
-                                            from={{opacity: 0}}
-                                            enter={{opacity: 1}}
-                                            leave={{opacity: 0}}
-                                            delay={100}
-                                            config={{duration: 1000}}
-                                            items={this.state.showHome}>
-                                            {(show) =>
-                                                show &&
-                                                ((props) => (
-                                                    <animated.div style={props}>
-                                                        <Home />
-                                                    </animated.div>
-                                                ))
-                                            }
-                                        </Transition>
-                                    </Route>
-                                    <Route exact path="/projects">
-                                        <Projects />
-                                    </Route>
-                                    <Route exact path="/resume">
-                                        <Resume />
-                                    </Route>
-
-                                    <Route path="/404">
-                                       <NotFound/>
-                                    </Route>
-                                    <Redirect to="/404" />
-                                </Switch>
+                                    <Route exact path="/home" element={<Home />} />
+                                    <Route exact path="/projects" element={<Projects />} />
+                                    <Route exact path="/resume" element={<Resume />} />
+                                </Routes>
 
                                 
                             </Router>
