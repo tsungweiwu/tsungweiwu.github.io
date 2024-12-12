@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d3f9e3a9.css",
-    "main.js": "/static/js/main.eded4f04.js",
+    "main.js": "/static/js/main.8e001dad.js",
     "static/media/personal_image.JPG": "/static/media/personal_image.6572b3db9fb4d347c83a.JPG",
     "static/media/meet2.png": "/static/media/meet2.432ee9a3e6ffce6534ad.png",
     "static/media/ctasia.png": "/static/media/ctasia.8ef54ee0673562a161dc.png",
@@ -20,17 +20,17 @@
     "static/media/gradeCalc.png": "/static/media/gradeCalc.627b63283cab1cab2c85.png",
     "static/media/poke.png": "/static/media/poke.ef20733e89a0820f9c13.png",
     "static/media/zoom-react-laravel.png": "/static/media/zoom-react-laravel.4dacfce68a16e5e2a8bf.png",
+    "static/media/Tsung Wei Wu.pdf": "/static/media/Tsung Wei Wu.36430f14157494a45b94.pdf",
     "static/media/exped.png": "/static/media/exped.94ecc22ed471c454562a.png",
     "static/media/timer.png": "/static/media/timer.7133afecae0decc471e5.png",
-    "static/media/TsungWeiWuUpdated.pdf": "/static/media/TsungWeiWuUpdated.c6f327092cf94f64f594.pdf",
     "static/media/catches.png": "/static/media/catches.411f8aadfb9021bdc503.png",
     "static/media/pong0.png": "/static/media/pong0.01fa80acfc0d619ea323.png",
     "index.html": "/index.html",
     "main.d3f9e3a9.css.map": "/static/css/main.d3f9e3a9.css.map",
-    "main.eded4f04.js.map": "/static/js/main.eded4f04.js.map"
+    "main.8e001dad.js.map": "/static/js/main.8e001dad.js.map"
   },
   "entrypoints": [
     "static/css/main.d3f9e3a9.css",
-    "static/js/main.eded4f04.js"
+    "static/js/main.8e001dad.js"
   ]
 }
