@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Row} from 'react-bootstrap';
-import resume from '../assets/TsungWeiWuUpdated.pdf'
+import resume from '../assets/Tsung Wei Wu.pdf'
 
 export default class Resume extends Component {
 

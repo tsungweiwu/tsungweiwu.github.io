@@ -19,11 +19,12 @@ export default class Home extends Component {
                     <p>
                         My name is Tsung Wei, and I am a Software Engineer
                         with a Bachelor of Science in Computer Science from the University of South
-                        Carolina. I grew up in a small country called Belize,
-                        where I first discovered my passion for programming.
+                        Carolina. Originally from Belize, I cultivated my passion for programming early on, which has shaped my career and dedication to technological innovation.
                         {<br />}
-                        Now I am in Canada in pursuit of a new career,
+                        I am now living in Montreal Canada in pursuit of a new career,
                         eager to contribute my skills and experience to a forward-thinking organization.
+                        {<br />}
+                        <li>I am authorized to work in Canada without sponsorship.</li>
                         {<br />}
                         {<br />}
                     </p>
