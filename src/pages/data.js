@@ -36,15 +36,6 @@ export default [
         languages: ['All', 'React Native'],
     },
     {
-        title: 'Zoom Meeting Dashboard',
-        description:
-            'Web application with React.js as the frontend and Laravel as backend. Zoom manager for multiple users to have limited access to a central Zoom hosting account to create meetings.',
-        imageSrc: [zoom],
-        frame: '',
-        link: 'https://github.com/tsungweiwu/zoom-react-laravel',
-        languages: ['All', 'React.js', 'Laravel', 'PHP'],
-    },
-    {
         title: 'Expedition Bot',
         // eslint-disable-next-line
         description:
@@ -72,6 +63,15 @@ export default [
         frame: 'https://www.youtube.com/embed/UNQeow4AL10',
         link: 'https://github.com/tsungweiwu/Utility-2',
         languages: ['All', 'TypeScript', 'JavaScript', 'HTML', 'CSS'],
+    },
+    {
+        title: 'Zoom Meeting Dashboard',
+        description:
+            'Web application with React.js as the frontend and Laravel as backend. Zoom manager for multiple users to have limited access to a central Zoom hosting account to create meetings.',
+        imageSrc: [zoom],
+        frame: '',
+        link: 'https://github.com/tsungweiwu/zoom-react-laravel',
+        languages: ['All', 'React.js', 'Laravel', 'PHP'],
     },
     {
         title: 'Grade Calculator',
