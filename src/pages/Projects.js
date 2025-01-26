@@ -19,7 +19,6 @@ export default class Projects extends Component {
             'C',
             'HTML',
             'CSS',
-            'Swift',
             'Python',
             'WordPress',
         ],

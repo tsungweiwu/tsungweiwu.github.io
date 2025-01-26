@@ -10,11 +10,6 @@ import meet1 from '../assets/meet/meet1.png';
 import meet2 from '../assets/meet/meet2.png';
 import meet3 from '../assets/meet/meet3.png';
 import meet4 from '../assets/meet/meet4.png';
-import ig1 from '../assets/instagram/ig1.png';
-import ig2 from '../assets/instagram/ig2.png';
-import ig3 from '../assets/instagram/ig3.png';
-import ig4 from '../assets/instagram/ig4.png';
-import webscrape from '../assets/webscrape.png';
 import exped from '../assets/exped.png';
 import timer from '../assets/pokemon/timer.png';
 import poke from '../assets/pokemon/poke.png';
@@ -32,6 +27,15 @@ export default [
         languages: ['All', 'WordPress'],
     },
     {
+        title: 'Meet Food & Culture',
+        description:
+            'Senior Project, to build an app from React Native that allows users from all over the globe to connect through the one thing we can all relate with, food. Food is the gateway to relationships and exploration of new cultures.',
+        imageSrc: [meet1, meet2, meet3, meet4],
+        frame: '',
+        link: 'https://www.diemdao.com/meetfoodculture',
+        languages: ['All', 'React Native'],
+    },
+    {
         title: 'Zoom Meeting Dashboard',
         description:
             'Web application with React.js as the frontend and Laravel as backend. Zoom manager for multiple users to have limited access to a central Zoom hosting account to create meetings.',
@@ -39,25 +43,6 @@ export default [
         frame: '',
         link: 'https://github.com/tsungweiwu/zoom-react-laravel',
         languages: ['All', 'React.js', 'Laravel', 'PHP'],
-    },
-    {
-        title: 'Youtility',
-        description:
-            'Utility service mobile application & web application allowing customers to have access to multiple utility companies through a central hub. Whether to pay bills or to report an issue with their service.',
-        imageSrc: [youtility],
-        frame: 'https://www.youtube.com/embed/UNQeow4AL10',
-        link: 'https://github.com/tsungweiwu/Utility-2',
-        languages: ['All', 'TypeScript', 'JavaScript', 'HTML', 'CSS'],
-    },
-    {
-        title: 'Detective Pikachu Bot',
-        // eslint-disable-next-line
-        description:
-            'Discord bot that sends a reminder for the cool-down cast of catching Pokemon and transfers embedded messages over to a specific channel when a "Shiny" or "Legendary" is found. It also keeps track of the daily Pokemon caught and displays it every midnight before resetting the count.',
-        imageSrc: [timer, poke, catches],
-        frame: '',
-        link: 'https://github.com/tsungweiwu/DetectivePikachu',
-        languages: ['All', 'Node.js', 'JavaScript'],
     },
     {
         title: 'Expedition Bot',
@@ -70,13 +55,23 @@ export default [
         languages: ['All', 'Node.js', 'JavaScript'],
     },
     {
-        title: 'Meet Food & Culture',
+        title: 'Detective Pikachu Bot',
+        // eslint-disable-next-line
         description:
-            'Senior Project, to build an app from React Native that allows users from all over the globe to connect through the one thing we can all relate with, food. Food is the gateway to relationships and exploration of new cultures.',
-        imageSrc: [meet1, meet2, meet3, meet4],
+            'Discord bot that sends a reminder for the cool-down cast of catching Pokemon and transfers embedded messages over to a specific channel when a "Shiny" or "Legendary" is found. It also keeps track of the daily Pokemon caught and displays it every midnight before resetting the count.',
+        imageSrc: [timer, poke, catches],
         frame: '',
-        link: 'https://www.diemdao.com/meetfoodculture',
-        languages: ['All', 'React Native'],
+        link: 'https://github.com/tsungweiwu/DetectivePikachu',
+        languages: ['All', 'Node.js', 'JavaScript'],
+    },
+    {
+        title: 'Youtility',
+        description:
+            'Utility service mobile application & web application allowing customers to have access to multiple utility companies through a central hub. Whether to pay bills or to report an issue with their service.',
+        imageSrc: [youtility],
+        frame: 'https://www.youtube.com/embed/UNQeow4AL10',
+        link: 'https://github.com/tsungweiwu/Utility-2',
+        languages: ['All', 'TypeScript', 'JavaScript', 'HTML', 'CSS'],
     },
     {
         title: 'Grade Calculator',
@@ -96,23 +91,5 @@ export default [
         frame: '',
         link: 'https://github.com/tsungweiwu/Pong',
         languages: ['All', 'C'],
-    },
-    {
-        title: 'Instagram Replica',
-        description:
-            'Practice project to try and replicate the most recent version of Instagram in 2020. Reason for choosing Instagram is because of its C.R.U.D. (Create, Retrieve, Update, Delete) to database required funtionality.',
-        imageSrc: [ig1, ig2, ig3, ig4],
-        frame: '',
-        link: '',
-        languages: ['All', 'Swift'],
-    },
-    {
-        title: 'Internship Web Scraper',
-        description:
-            'Practice program to collect specific information about intern positions available and export it to a csv file. This application also helped me understanding the html structures of Glassdoor in a deeper level.',
-        imageSrc: [webscrape],
-        frame: '',
-        link: 'https://github.com/tsungweiwu/InternshipFinder',
-        languages: ['All', 'Python'],
     },
 ];
