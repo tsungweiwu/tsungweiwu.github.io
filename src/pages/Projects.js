@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Container, Row, Button, ButtonGroup } from 'react-bootstrap';
+import { Row, Button, ButtonGroup } from 'react-bootstrap';
 import data from './data';
 import ProjectCard from './ProjectCard';
 
@@ -8,28 +8,22 @@ function Projects() {
 
   const languages = useMemo(() => {
     const allLangs = data.reduce((acc, project) => {
-      project.languages.forEach(lang => {
-        if (!acc.includes(lang)) {
-          acc.push(lang);
-        }
+      project.languages.forEach((lang) => {
+        if (!acc.includes(lang)) acc.push(lang);
       });
       return acc;
     }, ['All']);
-    // a more organized list of languages
-    const sortedLangs = allLangs.filter(lang => lang !== 'All').sort();
+    const sortedLangs = allLangs.filter((lang) => lang !== 'All').sort();
     return ['All', ...sortedLangs];
   }, []);
 
   const filteredProjects = useMemo(() => {
-    if (filterName === 'All') {
-      return data;
-    }
+    if (filterName === 'All') return data;
     return data.filter((project) => project.languages.includes(filterName));
   }, [filterName]);
 
   return (
-    <Container>
-      <h2 className="mb-4">Languages and Frameworks</h2>
+    <>
       <ButtonGroup className="flex-wrap mb-4">
         {languages.map((language) => (
           <Button
@@ -48,7 +42,7 @@ function Projects() {
           <ProjectCard key={index} project={project} />
         ))}
       </Row>
-    </Container>
+    </>
   );
 }
 
