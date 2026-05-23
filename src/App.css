@@ -1,63 +1,198 @@
-/* General Body Styles */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #2e2f32;
   color: #bfbbbb;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* App container to ensure footer sticks to the bottom */
 .App {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-.content-wrap {
-  flex: 1;
+/* ── Navbar ──────────────────────────────────────────── */
+.site-nav {
+  background-color: #1e1f22 !important;
+  border-bottom: 2px solid #f96815;
 }
 
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Anton', sans-serif;
-  color: #ffffff;
-}
-
-p {
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-/* Custom Bootstrap Overrides */
-.navbar-dark .navbar-brand {
+.nav-brand {
   font-family: 'Bebas Neue', cursive;
-  font-size: 1.8em;
+  font-size: 1.6em;
+  color: #ffffff !important;
+  letter-spacing: 0.04em;
 }
 
-.navbar-dark .nav-link {
+.site-nav .nav-link {
   font-family: 'Bebas Neue', cursive;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  color: #bfbbbb !important;
+  transition: color 0.2s;
+  padding: 6px 14px;
 }
 
-.btn-primary, .btn-outline-primary:hover, .btn-check:active+.btn-outline-primary, .btn-check:checked+.btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
+.site-nav .nav-link:hover {
+  color: #f96815 !important;
+}
+
+/* ── CV button (navbar + hero) ───────────────────────── */
+.btn-cv {
   background-color: #f96815;
   border-color: #f96815;
-  color: white;
+  color: #ffffff;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.1em;
+  letter-spacing: 0.05em;
+  padding: 6px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.15s;
+  display: inline-block;
 }
 
-.btn-outline-primary {
+.btn-cv:hover {
+  background-color: #d95a10;
+  border-color: #d95a10;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* ── Hero ────────────────────────────────────────────── */
+.hero-section {
+  padding: 80px 0 72px;
+  background: linear-gradient(170deg, #27272b 0%, #2e2f32 100%);
+  border-bottom: 1px solid #3a3b3e;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid #f96815;
+  box-shadow: 0 0 24px rgba(249, 104, 21, 0.25);
+}
+
+.hero-subtitle {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.1em;
   color: #f96815;
+  letter-spacing: 0.18em;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.hero-name {
+  font-family: 'Anton', sans-serif;
+  font-size: 3em;
+  color: #ffffff;
+  margin-bottom: 18px;
+  line-height: 1.1;
+}
+
+.hero-bio {
+  color: #bfbbbb;
+  font-size: 1.05em;
+  line-height: 1.75;
+  margin-bottom: 8px;
+}
+
+.hero-auth {
+  font-size: 0.88em;
+  color: #777;
+  font-style: italic;
+  margin-bottom: 26px;
+}
+
+.hero-links .btn,
+.hero-links a {
+  margin-bottom: 8px;
+}
+
+/* ── Sections ────────────────────────────────────────── */
+.section {
+  padding: 80px 0;
+}
+
+.section-alt {
+  background-color: #27272b;
+}
+
+.section-title {
+  font-family: 'Anton', sans-serif;
+  font-size: 2em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.section-divider {
+  height: 3px;
+  width: 48px;
+  background-color: #f96815;
+  border-radius: 2px;
+  margin-bottom: 40px;
+}
+
+/* ── Experience Cards ────────────────────────────────── */
+.experience-card {
+  background-color: #27272b;
+  border: 1px solid #3d3d3d;
+  color: #bfbbbb;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
   border-color: #f96815;
 }
 
-.badge.bg-primary {
-    background-color: #f96815 !important;
+.exp-company {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5em;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  margin-bottom: 2px;
 }
 
+.exp-role {
+  font-size: 0.87em;
+  color: #9e9b9b;
+  margin-bottom: 4px;
+}
 
-/* Project Card Styles */
+.exp-period {
+  font-size: 0.82em;
+  color: #f96815;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+.exp-bullets {
+  padding-left: 16px;
+  margin-bottom: 0;
+}
+
+.exp-bullets li {
+  font-size: 0.87em;
+  color: #9e9b9b;
+  line-height: 1.55;
+  padding-bottom: 5px;
+}
+
+/* ── Project Cards ───────────────────────────────────── */
 .card {
-  border: 1px solid #444;
-  transition: transform 0.2s;
+  border: 1px solid #3d3d3d;
+  background-color: #27272b;
+  transition: transform 0.2s ease;
+  color: #bfbbbb;
+}
+
+.card-title,
+.card-text {
+  color: #e0dede;
 }
 
 .card:hover {
@@ -65,13 +200,28 @@ p {
 }
 
 .card-footer {
-  background-color: #343a40;
-  border-top: 1px solid #444;
+  background-color: #1e1f22;
+  border-top: 1px solid #3d3d3d;
 }
 
-/* Icon Styles */
+.tagContainer {
+  margin-bottom: 2px;
+}
+
+.tag {
+  background-color: #f96815;
+  color: #000;
+  display: inline-block;
+  padding: 1px 7px;
+  margin: 2px 4px 2px 0;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 0.85em;
+  border-radius: 3px;
+}
+
 .icon {
   cursor: pointer;
+  color: #9e9b9b;
   transition: color 0.2s;
 }
 
@@ -79,25 +229,67 @@ p {
   color: #61dafb;
 }
 
-/* PDF Viewer Styles */
-.react-pdf__Page__canvas {
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto !important;
+/* ── Filter buttons ──────────────────────────────────── */
+.btn-outline-primary {
+  color: #f96815;
+  border-color: #f96815;
 }
 
-/* Footer Styles */
-.footer {
-  background-color: #27272b;
+.btn-outline-primary:hover,
+.btn-check:active + .btn-outline-primary,
+.btn-check:checked + .btn-outline-primary,
+.btn-outline-primary.active {
+  background-color: #f96815;
+  border-color: #f96815;
+  color: #fff;
 }
 
-.socialIcons {
-  margin-left: 0.8vh;
-  margin-right: 0.8vh;
+.badge.bg-primary {
+  background-color: #f96815 !important;
+}
+
+/* ── Carousel ────────────────────────────────────────── */
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23F96815' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23F96815' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* ── Footer ──────────────────────────────────────────── */
+.site-footer {
+  background-color: #1e1f22;
+  padding: 24px 0;
+  border-top: 1px solid #3a3b3e;
+  margin-top: auto;
+}
+
+.footer-copy {
+  font-size: 0.88em;
+  color: #555;
+}
+
+.social-icon {
   color: #f96815;
   transition: color 0.2s;
+  text-decoration: none;
 }
 
-.socialIcons:hover {
+.social-icon:hover {
   color: #61dafb;
+}
+
+/* ── Scrollbar ───────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #27272b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f96815;
+  border-radius: 3px;
 }
